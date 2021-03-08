@@ -1,0 +1,23 @@
+<style>
+img { max-height: 300px; display: block ;
+padding: 20px;
+margin: auto ;
+}
+body {
+    max-width: 800px ;
+    margin: auto ;
+
+}
+html { margin-bottom: 500px ; }
+</style>
+
+<body>
+</body>
+
+
+
+{% for recipe in recipes %}
+<ul>
+  <li><a href="{{ recipe.href }}"> {{ recipe.title }} </a></li>
+</ul>
+{% endfor %}

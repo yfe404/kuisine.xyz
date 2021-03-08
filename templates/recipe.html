@@ -1,0 +1,49 @@
+<style>
+img { max-height: 300px; display: block ;
+padding: 20px;
+margin: auto ;
+}
+body {
+    max-width: 800px ;
+    margin: auto ;
+
+}
+html { margin-bottom: 500px ; }
+</style>
+
+<body>
+<h1>{{ recipe.title }}</h1>
+
+Rating: {{ recipe.rating }}
+
+</p>
+
+{% if recipe.desc %}
+<em>
+ {{ recipe.desc }}
+</em>
+{% endif %}
+</p>
+
+<hr>
+
+
+
+<h2>Ingredients</h2>
+
+<ul>
+{% for item in recipe.ingredients %}
+<li>{{ item }} </li>
+{% endfor %}
+</ul>
+
+
+<h2>Directions</h2>
+
+<ul>
+{% for item in recipe.directions %}
+<li>{{ item }} </li>
+{% endfor %}
+</ul>
+
+</body>
