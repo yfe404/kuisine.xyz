@@ -2,6 +2,8 @@
 
 ## Build website
 
-```mkdir recipes```
-```python main.py```
+```
+mkdir recipes
+python main.py
+```
 
